@@ -22,4 +22,8 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(40);
     expect(ageCalculator.getAgeJupiter()).toEqual(40 / 11.86);
   });
+  test('should correctly determine the difference between the age of a person and their privious birthday in earth years', () => {
+    const ageCalculator = new AgeCalculator(40, 20);
+    expect(ageCalculator.yearDiffernce()).toEqual(20);
+  });
 });

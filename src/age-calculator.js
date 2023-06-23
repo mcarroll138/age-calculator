@@ -1,6 +1,7 @@
 export default class AgeCalculator {
-  constructor(currentAge) {
+  constructor(currentAge, yearInquiry) {
     this.earthAge = currentAge;
+    this.yearInquiry = yearInquiry;
     this.mercuryYears = .24;
     this.venusYears = .62;
     this.marsYears = 1.88;
@@ -29,4 +30,5 @@ export default class AgeCalculator {
     let jupiterYears = this.jupiterYears;
     return earthAge / jupiterYears;
   }
+
 }
