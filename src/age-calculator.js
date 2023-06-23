@@ -8,33 +8,33 @@ export default class AgeCalculator {
     this.jupiterYears = 11.86;
   }
   getAgeMecury() {
-    let earthAge = this.earthAge;
-    let mercuryYears = this.mercuryYears;
+    const earthAge = this.earthAge;
+    const mercuryYears = this.mercuryYears;
     return earthAge / mercuryYears;
   }
 
   getAgeVenus() {
-    let earthAge = this.earthAge;
-    let venusYears = this.venusYears;
+    const earthAge = this.earthAge;
+    const venusYears = this.venusYears;
     return earthAge / venusYears;
   }
 
   getAgeMars() {
-    let earthAge = this.earthAge;
-    let marsYears = this.marsYears;
+    const earthAge = this.earthAge;
+    const marsYears = this.marsYears;
     return earthAge / marsYears;
   }
 
   getAgeJupiter() {
-    let earthAge = this.earthAge;
-    let jupiterYears = this.jupiterYears;
+    const earthAge = this.earthAge;
+    const jupiterYears = this.jupiterYears;
     return earthAge / jupiterYears;
   }
 
   yearDiffernce() {
     const earthAge = this.earthAge;
     const yearInquiry = this.yearInquiry;
-    let yearDiff = earthAge - yearInquiry;
+    const yearDiff = earthAge - yearInquiry;
     return Math.abs(yearDiff);
   }
 }
