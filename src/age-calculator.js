@@ -34,8 +34,7 @@ export default class AgeCalculator {
   yearDiffernce() {
     const earthAge = this.earthAge;
     const yearInquiry = this.yearInquiry;
-    const yearDiff = earthAge - yearInquiry;
-    return yearDiff;
-
+    let yearDiff = earthAge - yearInquiry;
+    return Math.abs(yearDiff);
   }
 }
