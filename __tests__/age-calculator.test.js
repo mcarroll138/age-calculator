@@ -8,7 +8,11 @@ describe('AgeCalculator', () => {
   });
   test('should correctly determine the age of a person in mercury years', () => {
     const ageCalculator = new AgeCalculator(40);
-    expect(ageCalculator.mercuryYears).toEqual(40 / .24);
+    expect(ageCalculator.getAgeMecury()).toEqual(40 / .24);
+  });
+  test('should correctly determine the age of a person in venus years', () => {
+    const ageCalculator = new AgeCalculator(40);
+    expect(ageCalculator.getAgeVenus()).toEqual(40 / .62);
   });
 
 });
