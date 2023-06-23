@@ -14,5 +14,8 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(40);
     expect(ageCalculator.getAgeVenus()).toEqual(40 / .62);
   });
-
+  test('should correctly determine the age of a person in mars years', () => {
+    const ageCalculator = new AgeCalculator(40);
+    expect(ageCalculator.getAgeMars()).toEqual(40 / 1.88);
+  });
 });
