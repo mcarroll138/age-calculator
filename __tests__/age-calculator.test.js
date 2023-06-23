@@ -26,4 +26,8 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(40, 20);
     expect(ageCalculator.yearDiffernce()).toEqual(20);
   });
+  test('should correctly determine the difference between the age of a person and their future birthday in earth years', () => {
+    const ageCalculator = new AgeCalculator(40, 50);
+    expect(ageCalculator.yearDiffernce()).toEqual(10);
+  });
 });
