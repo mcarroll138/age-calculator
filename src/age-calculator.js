@@ -31,4 +31,11 @@ export default class AgeCalculator {
     return earthAge / jupiterYears;
   }
 
+  yearDiffernce() {
+    const earthAge = this.earthAge;
+    const yearInquiry = this.yearInquiry;
+    const yearDiff = earthAge - yearInquiry;
+    return yearDiff;
+
+  }
 }
