@@ -4,7 +4,7 @@ export default class AgeCalculator {
     this.mercuryYears = .24;
     this.venusYears = .62;
     this.marsYears = 1.88;
-    this.jupiterYears = 0;
+    this.jupiterYears = 11.86;
   }
   getAgeMecury() {
     let earthAge = this.earthAge;
@@ -22,5 +22,11 @@ export default class AgeCalculator {
     let earthAge = this.earthAge;
     let marsYears = this.marsYears;
     return earthAge / marsYears;
+  }
+
+  getAgeJupiter() {
+    let earthAge = this.earthAge;
+    let jupiterYears = this.jupiterYears;
+    return earthAge / jupiterYears;
   }
 }
