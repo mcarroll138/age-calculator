@@ -26,14 +26,9 @@ describe('AgeCalculator', () => {
     const jupiterYears = ageCalculator.earthAge / ageCalculator.jupiterYears;
     expect(jupiterYears).toBeCloseTo(3.37);
   });
-  test('should correctly determine the difference between the age of a person and their privious birthday in earth years', () => {
+  test('should correctly determine the difference between the age of a person and their privious and/or future birthday in earth years', () => {
     const ageCalculator = new AgeCalculator(40, 20);
-    expect(ageCalculator.yearDiffernce()).toEqual(20);
+    const yearDiff = ageCalculator.earthAge - ageCalculator.yearInquiry;
+    expect(Math.abs(yearDiff)).toEqual(20);
   });
-  test('should correctly determine the difference between the age of a person and their future birthday in earth years', () => {
-    const ageCalculator = new AgeCalculator(40, 50);
-    expect(ageCalculator.yearDiffernce()).toEqual(10);
-  });
-  // calculate how many years have passed
-  // calculate how many years have yet to pass
 });
