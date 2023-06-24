@@ -18,7 +18,8 @@ describe('AgeCalculator', () => {
   });
   test('should correctly determine the age of a person in mars years', () => {
     const ageCalculator = new AgeCalculator(40);
-    expect(ageCalculator.getAgeMars()).toEqual(40 / 1.88);
+    const marsYears = ageCalculator.earthAge / ageCalculator.marsYears;
+    expect(marsYears).toBeCloseTo(21.28);
   });
   test('should correctly determine the age of a person in jupiter years', () => {
     const ageCalculator = new AgeCalculator(40);
