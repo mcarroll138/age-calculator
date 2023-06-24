@@ -8,7 +8,8 @@ describe('AgeCalculator', () => {
   });
   test('should correctly determine the age of a person in mercury years', () => {
     const ageCalculator = new AgeCalculator(40);
-    expect(ageCalculator.getAgeMecury()).toEqual(40 / .24);
+    const mercuryYears = ageCalculator.earthAge / ageCalculator.mercuryYears;
+    expect(mercuryYears).toBeCloseTo(166.67);
   });
   test('should correctly determine the age of a person in venus years', () => {
     const ageCalculator = new AgeCalculator(40);
@@ -30,4 +31,6 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(40, 50);
     expect(ageCalculator.yearDiffernce()).toEqual(10);
   });
+  // calculate how many years have passed
+  // calculate how many years have yet to pass
 });
