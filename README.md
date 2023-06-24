@@ -2,8 +2,11 @@
 
 ### By Michael Carroll
 
-A repository used to run "Red, Green, Refactor" testing using Jest. Each line of business logic was tested by using the metrics of "good fail" followed by a "good pass" and a refactoring of code if needed.
-Link to GH Page:https://github.com/mcarroll138
+A repository used to run "Red, Green, Refactor" testing using Jest. Each line of business logic was tested by using the metrics of "good fail" followed by a "good pass" and a refactoring of code as needed.
+
+Link to GH Page:
+ 
+https://github.com/mcarroll138
 
 ## Technologies used 
 - HTML
