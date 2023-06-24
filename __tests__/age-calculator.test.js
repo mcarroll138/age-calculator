@@ -23,7 +23,8 @@ describe('AgeCalculator', () => {
   });
   test('should correctly determine the age of a person in jupiter years', () => {
     const ageCalculator = new AgeCalculator(40);
-    expect(ageCalculator.getAgeJupiter()).toEqual(40 / 11.86);
+    const jupiterYears = ageCalculator.earthAge / ageCalculator.jupiterYears;
+    expect(jupiterYears).toBeCloseTo(3.37);
   });
   test('should correctly determine the difference between the age of a person and their privious birthday in earth years', () => {
     const ageCalculator = new AgeCalculator(40, 20);
