@@ -1,29 +1,31 @@
-# (Application Name)
+# **Age Calculator**
 
-#### (Brief Description of Application)
+### By Michael Carroll
 
-#### By (Your Name Here)
+A repository used to run "Red, Green, Refactor" testing using Jest. Each line of business logic was tested by using the metrics of "good fail" followed by a "good pass" and a refactoring of code if needed.
+Link to GH Page:https://github.com/mcarroll138
 
-## Technologies Used
+## Technologies used 
+- HTML
+- CSS
+- JavaScript
+- webpack
+- Jest
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
-## Description
-
-## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+## Complete setup/installation instructions 
+- Clone this repository from github
+- Refer to package.json for software versions used
+- Launch index/index.html in text editor program
 
 ## Known Bugs
-
-* _Any known issues_
-* _should go here_
-
+- Testing prior to refactoring was 100% coverage and 100% passing. After refactoring testing shows uncovered lines.
 ## License
+MIT
+
+Copyright (c) 2023 Michael Carroll
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

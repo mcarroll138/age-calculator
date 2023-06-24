@@ -25,10 +25,18 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(40);
     const jupiterYears = ageCalculator.earthAge / ageCalculator.jupiterYears;
     expect(jupiterYears).toBeCloseTo(3.37);
+
+    const ageAll = ageCalculator.getAgeAll();
+    expect(ageAll.jupiterYears).toBe('3.37');
   });
   test('should correctly determine the difference between the age of a person and their privious and/or future birthday in earth years', () => {
     const ageCalculator = new AgeCalculator(40, 20);
     const yearDiff = ageCalculator.earthAge - ageCalculator.yearInquiry;
     expect(Math.abs(yearDiff)).toEqual(20);
+  });
+  test('should correctly determine the difference between the age of a person and their privious and/or future birthday in earth years', () => {
+    const ageCalculator = new AgeCalculator(40, 20);
+    const yearDiff = ageCalculator.yearDiffernce();
+    expect(yearDiff).toEqual(20);
   });
 });
