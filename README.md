@@ -18,7 +18,7 @@ Link to GH Page:https://github.com/mcarroll138
 - Launch index/index.html in text editor program
 
 ## Known Bugs
-- Testing prior to refactoring was 100% coverage and 100% passing. After refactoring testing shows uncovered lines.
+
 ## License
 MIT
 
