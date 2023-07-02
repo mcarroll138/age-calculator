@@ -17,12 +17,15 @@ https://github.com/mcarroll138
 
 ## Complete setup/installation instructions 
 - Clone this repository from github
-- Refer to package.json for software versions used
-- Launch index/index.html in text editor program
+- Run $ npm install from your root directory
+- Run $ npm run build to build the project
+- Run $ npm run start in your root folder
+- Run $ npm run test to test new lines of business logic for "Red, Green, Refactor"
 
 ## Known Bugs
 
 ## License
+
 MIT
 
 Copyright (c) 2023 Michael Carroll
